@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h2>Click any button below:</h2>
+<button id="btn1">Button 1</button>
+<button id="btn2">Button 2</button>
+<button id="btn3">Button 3</button>
+<div id="result" style="margin-top:20px;color:blue;font-weight:bold;"></div>
+<script>
+const resultDiv=document.getElementById("result");
+document.getElementById("btn1").addEventListener("click",function(){
+resultDiv.textContent="Button 1 was clicked!";
+});
+document.getElementById("btn2").addEventListener("click",function(){
+resultDiv.textContent="Button 2 was clicked!";
+});
+document.getElementById("btn3").addEventListener("click",function(){
+resultDiv.textContent="Button 3 was clicked!";
+});
+</script>
+</body>
+</html>
